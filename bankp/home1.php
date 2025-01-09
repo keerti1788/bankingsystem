@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #0047AB;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #003580;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #e8f4fa;
+        }
+        .hero h1 {
+            color: #0047AB;
+        }
+        .services, .offers {
+            padding: 20px;
+            text-align: center;
+        }
+        .services h2, .offers h2 {
+            color: #0047AB;
+        }
+        .service-item, .offer-item {
+            margin: 15px 0;
+        }
+        footer {
+            background-color: #0047AB;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to <?php echo 'ABC BANK'; ?></h1>
+        <p>Your Trusted Partner in Banking</p>
+    </header>
+    <nav>
+        <a href="openaccount.php">NEW ACCOUNT</a>
+        <a href="loan.php">LOAN REPAYMENT</a>
+    </nav>
+    <div class="hero">
+        <h1>Easy, Secure, and Reliable Banking</h1>
+        <p>Discover our wide range of services designed to meet your financial needs.</p>
+    </div>
+    <footer>
+        <p>&copy; <?php echo date('Y'); ?> <?php echo 'ABC BANK'; ?>. All Rights Reserved.</p>
+        <p><a href="#contact" style="color: white; text-decoration: underline;">Contact Us</a></p>
+    </footer>
+</body>
+</html>
